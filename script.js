@@ -182,20 +182,20 @@
  * @param {number} high
  * @return {number}
  */
-var rangeSumBST = function (root, low, high) {
-  let counter = 0;
+// var rangeSumBST = function (root, low, high) {
+//   let counter = 0;
 
-  function dfs(node) {
-    if (!node) return null;
+//   function dfs(node) {
+//     if (!node) return null;
 
-    if (node.val >= low && node.val <= high) counter += node.val;
+//     if (node.val >= low && node.val <= high) counter += node.val;
 
-    if (low < node.val) dfs(node.left);
+//     if (low < node.val) dfs(node.left);
 
-    if (high > node.val) dfs(node.right);
-  }
+//     if (high > node.val) dfs(node.right);
+//   }
 
-  dfs(root);
+//   dfs(root);
 
-  return counter;
-};
+//   return counter;
+// };
